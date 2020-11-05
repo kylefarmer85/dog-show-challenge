@@ -16,13 +16,8 @@ function getDogs() {
 }
 
 function renderDog(dog) {
-
   const tr = document.createElement('tr')
-  // const tdName = document.createElement('td')
-  // const tdBreed = document.createElement('td')
-  // const tdSex tdName = document.createElement('td')
   const editBtn = document.createElement('button')
-  // editBtn.innerText = "Edit Button"
 
   tr.innerHTML = `<td>${dog.name}</td> <td>${dog.breed}</td> <td>${dog.sex}</td><td><button class="dog-btn" data-name="${dog.name}" data-breed="${dog.breed}" data-sex=${dog.sex} data-id="${dog.id}">Edit Dog</button></td>`
 
